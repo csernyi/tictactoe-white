@@ -8,15 +8,12 @@ function currentGameStatus(board) {
 }
 
 function playersTurn(position, board) {
-  if (board == " , , , , , , , , " && position === 0) {
-    board[0] = 'X';
-  } else if (board == " , , , , , , , , " && position === 1) {
-    board[1] = 'X';
-  } else if (position === 1) {
-    board[1] = 'O';
-  } else if (position === 8) {
-    board[8] = 'O';
+  const emptyValues = board.filter((empty) => empty === " ");
+  let player = "X";
+  if (emptyValues.length % 2 === 0) {
+    player = "O";
   }
+  board[position] = player
 }
 
 module.exports.drawBoard = drawBoard;
