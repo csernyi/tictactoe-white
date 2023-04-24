@@ -94,7 +94,7 @@ describe('Win cases', () => {
     expect(logSpy).toHaveBeenCalledWith('Player O:\nX| |X\n-+-+-\nO|O|O\n-+-+-\nX| | \n\nPLAYER O WON!');
     logSpy.mockRestore();
   });
-  it.skip('should return PLAYER X WON! when in the following stance: (X, , ,O,X, ,O, ,X)', () => {
+  it('should return PLAYER X WON! when in the following stance: (X, , ,O,X, ,O, ,X)', () => {
     let board=drawBoard();
     playersTurn(0,board);
     playersTurn(3,board);

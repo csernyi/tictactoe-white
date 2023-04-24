@@ -50,7 +50,7 @@ Tic-Tac-Toe game will need:
   - ✅ UAT 5.2
   - ✅ UAT 5.3
   - ✅ UAT 5.4
-  - ⚠ UAT 5.5
+  - 🚧 UAT 5.5
   - ⚠ UAT 5.6
   - ⚠ Refactor
 
