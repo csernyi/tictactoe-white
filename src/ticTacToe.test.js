@@ -128,7 +128,7 @@ describe('Draw cases', () => {
     playersTurn(4,board);
     expect(playersTurn(7,board)).toBe('GAME ENDS WITH A DRAW!');
   });
-  it.skip('should print the GAME ENDS WITH A DRAW! ending screen when in the following stance: (X,O,X,O,O,X,X,X,O)', () => {
+  it('should print the GAME ENDS WITH A DRAW! ending screen when in the following stance: (X,O,X,O,O,X,X,X,O)', () => {
     const logSpy = jest.spyOn(global.console, 'log');
     let board=drawBoard();
     playersTurn(0,board);
