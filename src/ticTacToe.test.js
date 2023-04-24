@@ -82,7 +82,7 @@ describe('Win cases', () => {
     playersTurn(6,board);
     expect(playersTurn(5,board)).toBe('PLAYER O WON!');
   });
-  it.skip('should print the PLAYER O WON! winning screen when in the following stance: (X, ,X,O,O,O,X, , )', () => {
+  it('should print the PLAYER O WON! winning screen when in the following stance: (X, ,X,O,O,O,X, , )', () => {
     const logSpy = jest.spyOn(global.console, 'log');
     let board=drawBoard();
     playersTurn(0,board);
