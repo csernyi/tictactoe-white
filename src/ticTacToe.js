@@ -57,6 +57,8 @@ function botPlay() {
   console.log("Player X:\n" + currentGameStatus(board));
   playersTurn(1,board);
   console.log("Player O:\n" + currentGameStatus(board));
+  playersTurn(2,board);
+  console.log("Player X:\n" + currentGameStatus(board));
 };
 
 module.exports.drawBoard = drawBoard;
