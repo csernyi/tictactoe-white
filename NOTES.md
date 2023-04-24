@@ -66,7 +66,7 @@ Tic-Tac-Toe game will need:
 - 🚧 US 7 (Bot mode)
   - ✅ UAT 7.1
   - ✅ UAT 7.2
-  - ⚠ UAT 7.3
+  - 🚧 UAT 7.3
   - ⚠ UAT 7.4
   - ⚠ UAT 7.5
   - ⚠ UAT 7.6
