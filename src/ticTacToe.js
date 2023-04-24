@@ -28,11 +28,12 @@ function playersTurn(position, board) {
 }
 
 function thereIsAWinner(board) {
+  const allEqual = arr => arr.every( v => v === arr[0] && v !== " ")
   if (
-    board[0] === board[3] && board[0] === board[6] || 
-    board[3] === board[4] && board[3] === board[5] || 
-    board[0] === board[4] && board[0] === board[8]
-    ) {
+    allEqual([board[0],board[3],board[6]]) ||
+    allEqual([board[3],board[4],board[5]]) ||
+    allEqual([board[0],board[4],board[8]])
+  ) {
     return true;
   } else {
     return false;

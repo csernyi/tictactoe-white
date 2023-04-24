@@ -27,7 +27,7 @@ npm test -- --watchAll --collect-coverage --verbose
  ✅ Scenario #1 Given a Tic-Tac-Toe game simulator When the space is not in range 0-8 Then the game should show THIS IS AN INVALID POSITION.
  ✅ Scenario #2 Given a Tic-Tac-Toe game simulator When the space is not empty Then the game should show THIS SPACE IS ALREADY TAKEN.
 
-🚧 US #5 As a Tic-Tac-Toe game spectator I want to see the winning screens so that I can verify that 'X' or 'O' won the game.
+✅ US #5 As a Tic-Tac-Toe game spectator I want to see the winning screens so that I can verify that 'X' or 'O' won the game.
  ✅ Scenario #1 Given a Tic-Tac-Toe game simulator When board is in the following stance: (X, , ,X,O, ,X, ,O) Then the game should return PLAYER X WON!.
  ✅ Scenario #2 Given a Tic-Tac-Toe game simulator When board is in the following stance: (X, , ,X,O, ,X, ,O) Then the game should print the PLAYER X WON! winning screen.
  ✅ Scenario #3 Given a Tic-Tac-Toe game simulator When board is in the following stance: (X, ,X,O,O,O,X, , ) Then the game should return PLAYER O WON!.
