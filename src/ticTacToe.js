@@ -19,6 +19,7 @@ function playersTurn(position, board) {
   if (board[position] === " ") {
     board[position] = player;
     if (thereIsAWinner(board)) {
+      console.log("Player X:\n" + currentGameStatus(board) + "\n\nPLAYER X WON!");
       return "PLAYER " + player + " WON!";
     }
   } else {
