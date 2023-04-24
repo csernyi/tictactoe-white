@@ -4,13 +4,7 @@ function drawBoard() {
 }
 
 function currentGameStatus(board) {
-  if (board[0] == "X") {
-    return 'X| | \n-+-+-\n | | \n-+-+-\n | | ';
-  }
-  if (board[1] == "X") {
-    return ' |X| \n-+-+-\n | | \n-+-+-\n | | ';
-  }
-  return ' | | \n-+-+-\n | | \n-+-+-\n | | ';
+  return board[0] + "|" + board[1] + "|" + board[2] + "\n-+-+-\n" + board[3] + "|" + board[4] + "|" + board[5] + "\n-+-+-\n" + board[6] + "|" + board[7] + "|" + board[8];
 }
 
 function playersTurn(position, board) {
