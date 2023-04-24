@@ -45,4 +45,4 @@ npm test -- --watchAll --collect-coverage --verbose
  ✅ Scenario #3 Given a Tic-Tac-Toe game simulator When game is in bot mode Then at least 2 turns are displayed (log contains 'Player O:').
  ✅ Scenario #4 Given a Tic-Tac-Toe game simulator When game is in bot mode Then at least 3 turn is displayed (log contains 'Player X:' for the second time).
  ✅ Scenario #5 Given a Tic-Tac-Toe game simulator When game is in bot mode Then at least 4 turns are displayed (log contains 'Player O:' for the second time).
- 🚧 Scenario #6 Given a Tic-Tac-Toe game simulator When game is in bot mode Then the last step should appear (last log contains '!') - also add a 2 sec timeout.
+ ✅ Scenario #6 Given a Tic-Tac-Toe game simulator When game is in bot mode Then the last step should appear (last log contains '!') - also add a 2 sec timeout.

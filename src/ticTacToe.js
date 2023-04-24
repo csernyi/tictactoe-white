@@ -55,18 +55,19 @@ function botPlay() {
   const arr = [0, 1, 2, 3, 4, 5, 6, 7, 8];
   let botPlayer = "X";
   let board=drawBoard();
-  
   console.log("Game Board Creation...\n" + currentGameStatus(board) + "\n\nBoard Created.\nThe game will start with player X");
-  playersTurn(randomItem(arr),board);
-  console.log("Player " + botPlayer + ":\n" + currentGameStatus(board));
-  playersTurn(randomItem(arr),board);
-  botPlayer = "O";
-  console.log("Player " + botPlayer + ":\n" + currentGameStatus(board));
-  playersTurn(randomItem(arr),board);
-  botPlayer = "X";
-  console.log("Player " + botPlayer + ":\n" + currentGameStatus(board));
-  botPlayer = "O";
-  console.log("Player " + botPlayer + ":\n" + currentGameStatus(board));
+
+  do {
+    playersTurn(randomItem(arr),board);
+    if (thereIsAWinner(board) === false && arr.length > 0) {
+      if (arr.length % 2 === 0) {
+        botPlayer = "X";
+      } else {
+        botPlayer = "O";
+      }
+      console.log("Player " + botPlayer + ":\n" + currentGameStatus(board));
+    }
+  } while (thereIsAWinner(board) === false && arr.length !== 0);
 };
 
 module.exports.drawBoard = drawBoard;
