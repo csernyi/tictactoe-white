@@ -30,7 +30,8 @@ function playersTurn(position, board) {
 function thereIsAWinner(board) {
   if (
     board[0] === board[3] && board[0] === board[6] || 
-    board[3] === board[4] && board[3] === board[5]
+    board[3] === board[4] && board[3] === board[5] || 
+    board[0] === board[4] && board[0] === board[8]
     ) {
     return true;
   } else {
