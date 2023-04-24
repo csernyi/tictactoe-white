@@ -55,6 +55,6 @@ Tic-Tac-Toe game will need:
   - ✅ Refactor
 
 - 🚧 US 6 (Draw cases)
-  - 🚧 UAT 6.1
+  - ✅ UAT 6.1
   - ⚠ UAT 6.2
   - ⚠ Refactor

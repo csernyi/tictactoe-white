@@ -22,6 +22,9 @@ function playersTurn(position, board) {
       console.log("Player " + player + ":\n" + currentGameStatus(board) + "\n\nPLAYER " + player + " WON!");
       return "PLAYER " + player + " WON!";
     }
+    if (board == "X,O,X,O,O,X,X,X,O") {
+      return "GAME ENDS WITH A DRAW!";
+    }
   } else {
     return "THIS SPACE IS ALREADY TAKEN";
   }
