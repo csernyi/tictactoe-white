@@ -39,7 +39,7 @@ Tic-Tac-Toe game will need:
   - ✅ UAT 3.2
   - ✅ Refactor
 
-- 🚧 US 4 (Error checking)
+- ✅ US 4 (Error checking)
   - ✅ UAT 4.1
   - ✅ UAT 4.2
-  - ⚠ Refactor
+  - ✅ Refactor

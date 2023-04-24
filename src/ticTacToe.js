@@ -13,11 +13,12 @@ function playersTurn(position, board) {
   if (emptyValues.length % 2 === 0) {
     player = "O";
   }
-  board[position] = player
   if (position > 8 || position < 0) {
     return "THIS IS AN INVALID POSITION";
   }
-  if (board[position] !== " ") {
+  if (board[position] === " ") {
+    board[position] = player;
+  } else {
     return "THIS SPACE IS ALREADY TAKEN";
   }
 }
