@@ -46,7 +46,7 @@ describe('Error checking', () => {
     playersTurn(0,board);
     expect(playersTurn(10,board)).toBe('THIS IS AN INVALID POSITION');
   });
-  it.skip('should show THIS SPACE IS ALREADY TAKEN when the space is not empty', () => {
+  it('should show THIS SPACE IS ALREADY TAKEN when the space is not empty', () => {
     let board=drawBoard();
     playersTurn(0,board);
     expect(playersTurn(0,board)).toBe('THIS SPACE IS ALREADY TAKEN');
