@@ -50,6 +50,12 @@ function thereIsAWinner(board) {
   }
 };
 
+function botPlay() {
+  let board=drawBoard();
+  console.log("Game Board Creation...\n" + currentGameStatus(board) + "\n\nBoard Created.\nThe game will start with player X");
+};
+
 module.exports.drawBoard = drawBoard;
 module.exports.currentGameStatus = currentGameStatus;
 module.exports.playersTurn = playersTurn;
+module.exports.botPlay = botPlay;

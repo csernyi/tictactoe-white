@@ -1,6 +1,7 @@
 const drawBoard = require('./ticTacToe').drawBoard;
 const currentGameStatus = require('./ticTacToe').currentGameStatus;
 const playersTurn = require('./ticTacToe').playersTurn;
+const botPlay = require('./ticTacToe').botPlay;
 
 describe('Board creation process', () => {
   it('should return an empty 3x3 board', () => {
