@@ -25,5 +25,21 @@ Tic-Tac-Toe game will need:
 - ✅ Planning
 - ✅ Defining User Stories
 
-- 🚧 US 1 (Board creation)
-  - 🚧 UAT 1.1
+- ✅ US 1 (Board creation)
+  - ✅ UAT 1.1
+
+### Pomodoro 2
+- 🚧 US 2 (First move)
+  - 🚧 UAT 2.1
+  - ⚠ UAT 2.2
+  - ⚠ Refactor
+
+- ⚠ US 3 (Second move)
+  - ⚠ UAT 3.1
+  - ⚠ UAT 3.2
+  - ⚠ Refactor
+
+- ⚠ US 4 (Error checking)
+  - ⚠ UAT 4.1
+  - ⚠ UAT 4.2
+  - ⚠ Refactor

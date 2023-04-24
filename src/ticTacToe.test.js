@@ -10,3 +10,16 @@ describe('Board creation process', () => {
     logSpy.mockRestore();
   });
 });
+
+describe('Board after the first move', () => {
+  it('should show the following stance: (X, , , , , , , , )', () => {
+    let board = drawBoard();
+    playersTurn(0,board);
+    expect(currentGameStatus(board)).toBe('X| | \n-+-+-\n | | \n-+-+-\n | | ');
+  });
+  it.skip('should show the following stance: ( ,X, , , , , , , )', () => {
+    let board= drawBoard();
+    playersTurn(1,board);
+    expect(currentGameStatus(board)).toBe(' |X| \n-+-+-\n | | \n-+-+-\n | | ');
+  });
+});
