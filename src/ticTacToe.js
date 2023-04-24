@@ -14,6 +14,9 @@ function playersTurn(position, board) {
     player = "O";
   }
   board[position] = player
+  if (position > 8 || position < 0) {
+    return "THIS IS AN INVALID POSITION";
+  }
 }
 
 module.exports.drawBoard = drawBoard;
