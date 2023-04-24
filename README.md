@@ -12,8 +12,8 @@ npm test -- --watchAll --collect-coverage --verbose
 - ✅ DONE
 
 ## Backlog
-⚠ US #1 As a Tic-Tac-Toe game spectator I want to have a blank starting board drawn so that I can enjoy the game visually.
- ⚠ Scenario #1 Given a Tic-Tac-Toe game simulator When I start a new game Then the game should appear in a 3x3 board.
+🚧 US #1 As a Tic-Tac-Toe game spectator I want to have a blank starting board drawn so that I can enjoy the game visually.
+ 🚧 Scenario #1 Given a Tic-Tac-Toe game simulator When I start a new game Then the game should appear in a 3x3 board.
 
 ⚠ US #2 As a Tic-Tac-Toe game spectator I want player 'X' to move first so that I can verify that the game has started.
  ⚠ Scenario #1 Given a Tic-Tac-Toe game simulator When 'X' marks the 1st cell as it's first move Then the board should show the following stance: (X, , , , , , , , ).
@@ -46,4 +46,3 @@ npm test -- --watchAll --collect-coverage --verbose
  ⚠ Scenario #4 Given a Tic-Tac-Toe game simulator When game is in bot mode Then at least 3 turn is displayed (log contains 'Player X:' for the second time).
  ⚠ Scenario #5 Given a Tic-Tac-Toe game simulator When game is in bot mode Then at least 4 turns are displayed (log contains 'Player O:' for the second time).
  ⚠ Scenario #6 Given a Tic-Tac-Toe game simulator When game is in bot mode Then the last step should appear (last log contains '!') - also add a 2 sec timeout.
- 

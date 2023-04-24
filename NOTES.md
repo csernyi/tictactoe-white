@@ -25,5 +25,5 @@ Tic-Tac-Toe game will need:
 - ✅ Planning
 - ✅ Defining User Stories
 
-- ⚠ US 1 (Board creation)
-  - ⚠ UAT 1.1
+- 🚧 US 1 (Board creation)
+  - 🚧 UAT 1.1

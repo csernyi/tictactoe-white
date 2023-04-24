@@ -1,5 +1,11 @@
-function ticTacToe() {
-  return 'hello';
+function drawBoard() {
+  let board = [" "," "," "," "," "," "," "," "," "];
+  return board;
 }
 
-module.exports = ticTacToe;
+function currentGameStatus() {
+ return true;
+}
+
+module.exports.drawBoard = drawBoard;
+module.exports.currentGameStatus = currentGameStatus;
