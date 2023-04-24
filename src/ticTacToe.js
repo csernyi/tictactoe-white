@@ -23,6 +23,7 @@ function playersTurn(position, board) {
       return "PLAYER " + player + " WON!";
     }
     if (board == "X,O,X,O,O,X,X,X,O") {
+      console.log("Player " + player + ":\n" + currentGameStatus(board) + "\n\nGAME ENDS WITH A DRAW!");
       return "GAME ENDS WITH A DRAW!";
     }
   } else {
