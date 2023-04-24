@@ -21,10 +21,9 @@ Tic-Tac-Toe game will need:
 
 ## Plans
 ### Pomodoro 1
-- ⚠ Environment setup
-- ⚠ Planning
-- ⚠ Defining User Stories
+- ✅ Environment setup
+- ✅ Planning
+- 🚧 Defining User Stories
 
 - ⚠ US 1 (Board creation)
   - ⚠ UAT 1.1
-  
