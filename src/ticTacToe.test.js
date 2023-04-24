@@ -1,4 +1,4 @@
-const hello = require('./hello');
+const ticTacToe = require('./ticTacToe');
 
 describe('hello', () => {
   it('should return hello', () => {
