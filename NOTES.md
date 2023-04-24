@@ -69,6 +69,6 @@ Tic-Tac-Toe game will need:
   - ✅ UAT 7.3
   - ✅ UAT 7.4
   - ✅ Refactor
-  - 🚧 UAT 7.5
+  - ✅ UAT 7.5
   - ⚠ UAT 7.6
   - ⚠ Refactor

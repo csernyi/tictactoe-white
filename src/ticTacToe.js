@@ -65,6 +65,8 @@ function botPlay() {
   playersTurn(randomItem(arr),board);
   botPlayer = "X";
   console.log("Player " + botPlayer + ":\n" + currentGameStatus(board));
+  botPlayer = "O";
+  console.log("Player " + botPlayer + ":\n" + currentGameStatus(board));
 };
 
 module.exports.drawBoard = drawBoard;
