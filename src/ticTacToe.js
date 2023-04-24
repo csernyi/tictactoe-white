@@ -55,6 +55,8 @@ function botPlay() {
   console.log("Game Board Creation...\n" + currentGameStatus(board) + "\n\nBoard Created.\nThe game will start with player X");
   playersTurn(0,board);
   console.log("Player X:\n" + currentGameStatus(board));
+  playersTurn(1,board);
+  console.log("Player O:\n" + currentGameStatus(board));
 };
 
 module.exports.drawBoard = drawBoard;
