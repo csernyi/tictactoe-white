@@ -29,8 +29,8 @@ npm test -- --watchAll --collect-coverage --verbose
 
 🚧 US #5 As a Tic-Tac-Toe game spectator I want to see the winning screens so that I can verify that 'X' or 'O' won the game.
  ✅ Scenario #1 Given a Tic-Tac-Toe game simulator When board is in the following stance: (X, , ,X,O, ,X, ,O) Then the game should return PLAYER X WON!.
- 🚧 Scenario #2 Given a Tic-Tac-Toe game simulator When board is in the following stance: (X, , ,X,O, ,X, ,O) Then the game should print the PLAYER X WON! winning screen.
- ⚠ Scenario #3 Given a Tic-Tac-Toe game simulator When board is in the following stance: (X, ,X,O,O,O,X, , ) Then the game should return PLAYER O WON!.
+ ✅ Scenario #2 Given a Tic-Tac-Toe game simulator When board is in the following stance: (X, , ,X,O, ,X, ,O) Then the game should print the PLAYER X WON! winning screen.
+ 🚧 Scenario #3 Given a Tic-Tac-Toe game simulator When board is in the following stance: (X, ,X,O,O,O,X, , ) Then the game should return PLAYER O WON!.
  ⚠ Scenario #4 Given a Tic-Tac-Toe game simulator When board is in the following stance: (X, ,X,O,O,O,X, , ) Then the game should print the PLAYER O WON! winning screen.
  ⚠ Scenario #5 Given a Tic-Tac-Toe game simulator When board is in the following stance: (X, , ,O,X, ,O, ,X) Then the game should return PLAYER X WON!.
  ⚠ Scenario #6 Given a Tic-Tac-Toe game simulator When board is in the following stance: (X, , ,O,X, ,O, ,X) Then the game should print the PLAYER X WON! winning screen.

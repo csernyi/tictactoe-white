@@ -47,8 +47,8 @@ Tic-Tac-Toe game will need:
 ### Pomodoro 3
 - 🚧 US 5 (Win cases)
   - ✅ UAT 5.1
-  - 🚧 UAT 5.2
-  - ⚠ UAT 5.3
+  - ✅ UAT 5.2
+  - 🚧 UAT 5.3
   - ⚠ UAT 5.4
   - ⚠ UAT 5.5
   - ⚠ UAT 5.6
