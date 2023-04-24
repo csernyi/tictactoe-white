@@ -8,10 +8,12 @@ function currentGameStatus(board) {
 }
 
 function playersTurn(position, board) {
-  if (position === 0) {
+  if (board == " , , , , , , , , " && position === 0) {
     board[0] = 'X';
-  } else {
+  } else if (board == " , , , , , , , , " && position === 1) {
     board[1] = 'X';
+  } else {
+    board[1] = 'O';
   }
 }
 

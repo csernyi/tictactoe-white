@@ -20,7 +20,7 @@ npm test -- --watchAll --collect-coverage --verbose
  ✅ Scenario #2 Given a Tic-Tac-Toe game simulator When 'X' marks the 2nd cell as it's first move Then the board should show the following stance: ( ,X, , , , , , , ).
 
 🚧 US #3 As a Tic-Tac-Toe game spectator I want player 'O' to move second so that I can verify that the players move alternately.
- 🚧 Scenario #1 Given a Tic-Tac-Toe game simulator When 'X' marks the 1st then 'O' marks the 2nd cell Then the board should show the following stance: (X,O, , , , , , , ).
+ ✅ Scenario #1 Given a Tic-Tac-Toe game simulator When 'X' marks the 1st then 'O' marks the 2nd cell Then the board should show the following stance: (X,O, , , , , , , ).
  ⚠ Scenario #2 Given a Tic-Tac-Toe game simulator When 'X' marks the 2nd then 'O' marks the 9th cell Then the board should show the following stance: ( ,X, , , , , , ,O).
 
 ⚠ US #4 As a Tic-Tac-Toe game spectator I want an error checking feature so that it can prevent invalid entries.

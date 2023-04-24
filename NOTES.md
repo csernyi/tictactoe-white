@@ -35,7 +35,7 @@ Tic-Tac-Toe game will need:
   - ✅ Refactor
 
 - 🚧 US 3 (Second move)
-  - 🚧 UAT 3.1
+  - ✅ UAT 3.1
   - ⚠ UAT 3.2
   - ⚠ Refactor
 
