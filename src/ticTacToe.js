@@ -17,6 +17,9 @@ function playersTurn(position, board) {
   if (position > 8 || position < 0) {
     return "THIS IS AN INVALID POSITION";
   }
+  if (board[position] !== " ") {
+    return "THIS SPACE IS ALREADY TAKEN";
+  }
 }
 
 module.exports.drawBoard = drawBoard;
