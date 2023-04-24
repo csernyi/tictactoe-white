@@ -24,3 +24,18 @@ describe('Board after the first move', () => {
     expect(currentGameStatus(board)).toBe(' |X| \n-+-+-\n | | \n-+-+-\n | | ');
   });
 });
+
+describe('Board after the second move', () => {
+  it('should show the following stance: (X,O, , , , , , , )', () => {
+    let board = drawBoard();
+    playersTurn(0,board);
+    playersTurn(1,board);
+    expect(currentGameStatus(board)).toBe('X|O| \n-+-+-\n | | \n-+-+-\n | | ');
+  });
+  it.skip('should show the following stance: ( ,X, , , , , , ,O)', () => {
+    let board= drawBoard();
+    playersTurn(1,board);
+    playersTurn(8,board);
+    expect(currentGameStatus(board)).toBe(' |X| \n-+-+-\n | | \n-+-+-\n | |O');
+  });
+});
