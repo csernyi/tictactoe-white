@@ -144,3 +144,42 @@ describe('Draw cases', () => {
     logSpy.mockRestore();
   });
 });
+
+describe('Bot mode should imitate 2 bots playing in auto mode', () => {
+  it('and starting screen is displayed (log contains Game Board Creation...)', () => {
+    const logSpy = jest.spyOn(global.console, 'log');
+    botPlay();
+    expect(logSpy).toHaveBeenCalledWith(expect.stringContaining('Game Board Creation...'));
+    logSpy.mockRestore();
+  });
+  it.skip('and at least 1 turn is displayed (log contains Player X:)', () => {
+    const logSpy = jest.spyOn(global.console, 'log');
+    botPlay();
+    expect(logSpy).toHaveBeenCalledWith(expect.stringContaining('Player X:'));
+    logSpy.mockRestore();
+  });
+  it.skip('and at least 2 turns are displayed (log contains Player O:)', () => {
+    const logSpy = jest.spyOn(global.console, 'log');
+    botPlay();
+    expect(logSpy).toHaveBeenCalledWith(expect.stringContaining('Player O:'));
+    logSpy.mockRestore();
+  });
+  it.skip('and at least 3 turns are displayed (log contains Player X: for the second time)', () => {
+    const logSpy = jest.spyOn(global.console, 'log');
+    botPlay();
+    expect(logSpy).toHaveBeenNthCalledWith(4, expect.stringContaining('Player X:'));
+    logSpy.mockRestore();
+  });
+  it.skip('and at least 4 turns are displayed (log contains Player O: for the second time)', () => {
+    const logSpy = jest.spyOn(global.console, 'log');
+    botPlay();
+    expect(logSpy).toHaveBeenNthCalledWith(5, expect.stringContaining('Player O:'));
+    logSpy.mockRestore();
+  });
+  it.skip('until they finish the game (last log contains !)', () => {
+    const logSpy = jest.spyOn(global.console, 'log');
+    botPlay(2);
+    expect(logSpy).toHaveBeenLastCalledWith(expect.stringContaining('!'));
+    logSpy.mockRestore();
+  });
+});
