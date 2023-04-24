@@ -12,8 +12,10 @@ function playersTurn(position, board) {
     board[0] = 'X';
   } else if (board == " , , , , , , , , " && position === 1) {
     board[1] = 'X';
-  } else {
+  } else if (position === 1) {
     board[1] = 'O';
+  } else if (position === 8) {
+    board[8] = 'O';
   }
 }
 
