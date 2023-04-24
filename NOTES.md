@@ -43,3 +43,18 @@ Tic-Tac-Toe game will need:
   - ✅ UAT 4.1
   - ✅ UAT 4.2
   - ✅ Refactor
+
+### Pomodoro 3
+- 🚧 US 5 (Win cases)
+  - 🚧 UAT 5.1
+  - ⚠ UAT 5.2
+  - ⚠ UAT 5.3
+  - ⚠ UAT 5.4
+  - ⚠ UAT 5.5
+  - ⚠ UAT 5.6
+  - ⚠ Refactor
+
+- ⚠ US 6 (Draw cases)
+  - ⚠ UAT 6.1
+  - ⚠ UAT 6.2
+  - ⚠ Refactor

@@ -52,3 +52,65 @@ describe('Error checking', () => {
     expect(playersTurn(0,board)).toBe('THIS SPACE IS ALREADY TAKEN');
   });
 });
+
+describe('Win cases', () => {
+  it('should return PLAYER X WON! when in the following stance: (X, , ,X,O, ,X, ,O)', () => {
+    let board=drawBoard();
+    playersTurn(0,board);
+    playersTurn(4,board);
+    playersTurn(3,board);
+    playersTurn(8,board);
+    expect(playersTurn(6,board)).toBe('PLAYER X WON!');
+  });
+  it.skip('should print the PLAYER X WON! winning screen when in the following stance: (X, , ,X,O, ,X, ,O)', () => {
+    const logSpy = jest.spyOn(global.console, 'log');
+    let board=drawBoard();
+    playersTurn(0,board);
+    playersTurn(4,board);
+    playersTurn(3,board);
+    playersTurn(8,board);
+    playersTurn(6,board);
+    expect(logSpy).toHaveBeenCalledWith('Player X:\nX| | \n-+-+-\nX|O| \n-+-+-\nX| |O\n\nPLAYER X WON!');
+    logSpy.mockRestore();
+  });
+  it.skip('should return PLAYER O WON! when in the following stance: (X, ,X,O,O,O,X, , )', () => {
+    let board=drawBoard();
+    playersTurn(0,board);
+    playersTurn(3,board);
+    playersTurn(2,board);
+    playersTurn(4,board);
+    playersTurn(6,board);
+    expect(playersTurn(5,board)).toBe('PLAYER O WON!');
+  });
+  it.skip('should print the PLAYER O WON! winning screen when in the following stance: (X, ,X,O,O,O,X, , )', () => {
+    const logSpy = jest.spyOn(global.console, 'log');
+    let board=drawBoard();
+    playersTurn(0,board);
+    playersTurn(3,board);
+    playersTurn(2,board);
+    playersTurn(4,board);
+    playersTurn(6,board);
+    playersTurn(5,board);
+    expect(logSpy).toHaveBeenCalledWith('Player O:\nX| |X\n-+-+-\nO|O|O\n-+-+-\nX| | \n\nPLAYER O WON!');
+    logSpy.mockRestore();
+  });
+  it.skip('should return PLAYER X WON! when in the following stance: (X, , ,O,X, ,O, ,X)', () => {
+    let board=drawBoard();
+    playersTurn(0,board);
+    playersTurn(3,board);
+    playersTurn(4,board);
+    playersTurn(6,board);
+    expect(playersTurn(8,board)).toBe('PLAYER X WON!');
+  });
+  it.skip('should print the PLAYER X WON! winning screen when in the following stance: (X, , ,O,X, ,O, ,X)', () => {
+    const logSpy = jest.spyOn(global.console, 'log');
+    let board=drawBoard();
+    playersTurn(0,board);
+    playersTurn(3,board);
+    playersTurn(4,board);
+    playersTurn(6,board);
+    playersTurn(8,board);
+    expect(logSpy).toHaveBeenCalledWith('Player X:\nX| | \n-+-+-\nO|X| \n-+-+-\nO| |X\n\nPLAYER X WON!');
+    logSpy.mockRestore();
+  });
+});
