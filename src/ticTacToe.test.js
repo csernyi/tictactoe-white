@@ -32,7 +32,7 @@ describe('Board after the second move', () => {
     playersTurn(1,board);
     expect(currentGameStatus(board)).toBe('X|O| \n-+-+-\n | | \n-+-+-\n | | ');
   });
-  it.skip('should show the following stance: ( ,X, , , , , , ,O)', () => {
+  it('should show the following stance: ( ,X, , , , , , ,O)', () => {
     let board= drawBoard();
     playersTurn(1,board);
     playersTurn(8,board);
