@@ -179,7 +179,7 @@ describe('Bot mode should imitate 2 bots playing in auto mode', () => {
   });
   it('until they finish the game (last log contains !)', () => {
     const logSpy = jest.spyOn(global.console, 'log');
-    botPlay(2);
+    botPlay(2000);
     expect(logSpy).toHaveBeenLastCalledWith(expect.stringContaining('!'));
     logSpy.mockRestore();
   });

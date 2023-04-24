@@ -63,7 +63,7 @@ Tic-Tac-Toe game will need:
   - 🚧 UAT 7.1
 
 ### Pomodoro 4
-- 🚧 US 7 (Bot mode)
+- ✅ US 7 (Bot mode)
   - ✅ UAT 7.1
   - ✅ UAT 7.2
   - ✅ UAT 7.3
@@ -71,4 +71,4 @@ Tic-Tac-Toe game will need:
   - ✅ Refactor
   - ✅ UAT 7.5
   - ✅ UAT 7.6
-  - ⚠ Refactor
+  - ✅ Refactor

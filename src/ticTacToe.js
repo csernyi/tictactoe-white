@@ -50,12 +50,13 @@ function thereIsAWinner(board) {
   }
 };
 
-function botPlay() {
+function botPlay(waitTime) {
   const randomItem = arr => arr.splice((Math.random() * arr.length) | 0, 1);
   const arr = [0, 1, 2, 3, 4, 5, 6, 7, 8];
   let botPlayer = "X";
   let board=drawBoard();
   console.log("Game Board Creation...\n" + currentGameStatus(board) + "\n\nBoard Created.\nThe game will start with player X");
+  wait(waitTime);
 
   do {
     playersTurn(randomItem(arr),board);
@@ -67,7 +68,13 @@ function botPlay() {
       }
       console.log("Player " + botPlayer + ":\n" + currentGameStatus(board));
     }
+    wait(waitTime);
   } while (thereIsAWinner(board) === false && arr.length !== 0);
+};
+
+function wait(ms) {
+  const end = new Date().getTime() + ms;
+  while (new Date().getTime() < end) {}
 };
 
 module.exports.drawBoard = drawBoard;
