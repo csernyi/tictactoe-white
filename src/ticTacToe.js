@@ -18,10 +18,22 @@ function playersTurn(position, board) {
   }
   if (board[position] === " ") {
     board[position] = player;
+    if (thereIsAWinner(board)) {
+      return "PLAYER " + player + " WON!";
+    }
   } else {
     return "THIS SPACE IS ALREADY TAKEN";
   }
 }
+
+function thereIsAWinner(board) {
+  if (board[0] === board[3] && board[0] === board[6]) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
 
 module.exports.drawBoard = drawBoard;
 module.exports.currentGameStatus = currentGameStatus;
