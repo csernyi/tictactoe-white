@@ -1,4 +1,8 @@
-# Awesome repo
+# project name
+codewars link
+codewars description
+
+npm test -- --watchAll --collect-coverage --verbose
 
 ## Legend
 - ⚠ TODO
@@ -6,3 +10,5 @@
 - ✅ DONE
 
 ## Backlog
+⚠ US #1 As a ... I want to ... so that I ...
+ ⚠ Scenario #1 Given ... When ... Then ...
