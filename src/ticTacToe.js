@@ -4,14 +4,21 @@ function drawBoard() {
 }
 
 function currentGameStatus(board) {
-  if (board.includes("X")) {
+  if (board[0] == "X") {
     return 'X| | \n-+-+-\n | | \n-+-+-\n | | ';
+  }
+  if (board[1] == "X") {
+    return ' |X| \n-+-+-\n | | \n-+-+-\n | | ';
   }
   return ' | | \n-+-+-\n | | \n-+-+-\n | | ';
 }
 
 function playersTurn(position, board) {
-  board[0] = 'X';
+  if (position === 0) {
+    board[0] = 'X';
+  } else {
+    board[1] = 'X';
+  }
 }
 
 module.exports.drawBoard = drawBoard;

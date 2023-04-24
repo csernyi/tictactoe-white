@@ -17,7 +17,7 @@ npm test -- --watchAll --collect-coverage --verbose
 
 🚧 US #2 As a Tic-Tac-Toe game spectator I want player 'X' to move first so that I can verify that the game has started.
  ✅ Scenario #1 Given a Tic-Tac-Toe game simulator When 'X' marks the 1st cell as it's first move Then the board should show the following stance: (X, , , , , , , , ).
- 🚧 Scenario #2 Given a Tic-Tac-Toe game simulator When 'X' marks the 2nd cell as it's first move Then the board should show the following stance: ( ,X, , , , , , , ).
+ ✅ Scenario #2 Given a Tic-Tac-Toe game simulator When 'X' marks the 2nd cell as it's first move Then the board should show the following stance: ( ,X, , , , , , , ).
 
 ⚠ US #3 As a Tic-Tac-Toe game spectator I want player 'O' to move second so that I can verify that the players move alternately.
  ⚠ Scenario #1 Given a Tic-Tac-Toe game simulator When 'X' marks the 1st then 'O' marks the 2nd cell Then the board should show the following stance: (X,O, , , , , , , ).
