@@ -4,7 +4,7 @@ function drawBoard() {
 }
 
 function currentGameStatus() {
- return true;
+  return " | | \n-+-+-\n | | \n-+-+-\n | | ";
 }
 
 module.exports.drawBoard = drawBoard;
