@@ -18,7 +18,7 @@ describe('Board after the first move', () => {
     playersTurn(0,board);
     expect(currentGameStatus(board)).toBe('X| | \n-+-+-\n | | \n-+-+-\n | | ');
   });
-  it.skip('should show the following stance: ( ,X, , , , , , , )', () => {
+  it('should show the following stance: ( ,X, , , , , , , )', () => {
     let board= drawBoard();
     playersTurn(1,board);
     expect(currentGameStatus(board)).toBe(' |X| \n-+-+-\n | | \n-+-+-\n | | ');
