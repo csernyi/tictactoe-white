@@ -171,7 +171,7 @@ describe('Bot mode should imitate 2 bots playing in auto mode', () => {
     expect(logSpy).toHaveBeenNthCalledWith(4, expect.stringContaining('Player X:'));
     logSpy.mockRestore();
   });
-  it.skip('and at least 4 turns are displayed (log contains Player O: for the second time)', () => {
+  it('and at least 4 turns are displayed (log contains Player O: for the second time)', () => {
     const logSpy = jest.spyOn(global.console, 'log');
     botPlay();
     expect(logSpy).toHaveBeenNthCalledWith(5, expect.stringContaining('Player O:'));
