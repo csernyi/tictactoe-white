@@ -30,7 +30,7 @@ Tic-Tac-Toe game will need:
 
 ### Pomodoro 2
 - 🚧 US 2 (First move)
-  - 🚧 UAT 2.1
+  - ✅ UAT 2.1
   - ⚠ UAT 2.2
   - ⚠ Refactor
 
