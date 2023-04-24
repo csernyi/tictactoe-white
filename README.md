@@ -23,8 +23,8 @@ npm test -- --watchAll --collect-coverage --verbose
  ✅ Scenario #1 Given a Tic-Tac-Toe game simulator When 'X' marks the 1st then 'O' marks the 2nd cell Then the board should show the following stance: (X,O, , , , , , , ).
  ✅ Scenario #2 Given a Tic-Tac-Toe game simulator When 'X' marks the 2nd then 'O' marks the 9th cell Then the board should show the following stance: ( ,X, , , , , , ,O).
 
-⚠ US #4 As a Tic-Tac-Toe game spectator I want an error checking feature so that it can prevent invalid entries.
- ⚠ Scenario #1 Given a Tic-Tac-Toe game simulator When the space is not in range 0-8 Then the game should show THIS IS AN INVALID POSITION.
+🚧 US #4 As a Tic-Tac-Toe game spectator I want an error checking feature so that it can prevent invalid entries.
+ 🚧 Scenario #1 Given a Tic-Tac-Toe game simulator When the space is not in range 0-8 Then the game should show THIS IS AN INVALID POSITION.
  ⚠ Scenario #2 Given a Tic-Tac-Toe game simulator When the space is not empty Then the game should show THIS SPACE IS ALREADY TAKEN.
 
 ⚠ US #5 As a Tic-Tac-Toe game spectator I want to see the winning screens so that I can verify that 'X' or 'O' won the game.
