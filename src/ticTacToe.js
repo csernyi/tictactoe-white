@@ -22,28 +22,33 @@ function playersTurn(position, board) {
       console.log("Player " + player + ":\n" + currentGameStatus(board) + "\n\nPLAYER " + player + " WON!");
       return "PLAYER " + player + " WON!";
     }
-    if (board == "X,O,X,O,O,X,X,X,O") {
+    if (thereIsAWinner(board) === false && emptyValues.length === 1) {
       console.log("Player " + player + ":\n" + currentGameStatus(board) + "\n\nGAME ENDS WITH A DRAW!");
       return "GAME ENDS WITH A DRAW!";
     }
   } else {
     return "THIS SPACE IS ALREADY TAKEN";
   }
-}
+  return "NEXT PLAYER'S TURN";
+};
 
 function thereIsAWinner(board) {
   const allEqual = arr => arr.every( v => v === arr[0] && v !== " ")
   if (
     allEqual([board[0],board[3],board[6]]) ||
     allEqual([board[3],board[4],board[5]]) ||
-    allEqual([board[0],board[4],board[8]])
+    allEqual([board[0],board[4],board[8]]) ||
+    allEqual([board[0],board[1],board[2]]) ||
+    allEqual([board[6],board[7],board[8]]) ||
+    allEqual([board[1],board[4],board[7]]) ||
+    allEqual([board[2],board[5],board[8]]) ||
+    allEqual([board[2],board[4],board[6]])
   ) {
     return true;
   } else {
     return false;
   }
 };
-
 
 module.exports.drawBoard = drawBoard;
 module.exports.currentGameStatus = currentGameStatus;
