@@ -53,6 +53,8 @@ function thereIsAWinner(board) {
 function botPlay() {
   let board=drawBoard();
   console.log("Game Board Creation...\n" + currentGameStatus(board) + "\n\nBoard Created.\nThe game will start with player X");
+  playersTurn(0,board);
+  console.log("Player X:\n" + currentGameStatus(board));
 };
 
 module.exports.drawBoard = drawBoard;
