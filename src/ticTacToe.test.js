@@ -114,3 +114,33 @@ describe('Win cases', () => {
     logSpy.mockRestore();
   });
 });
+
+describe('Draw cases', () => {
+  it('should return GAME ENDS WITH A DRAW! when in the following stance: (X,O,X,O,O,X,X,X,O)', () => {
+    let board=drawBoard();
+    playersTurn(0,board);
+    playersTurn(1,board);
+    playersTurn(2,board);
+    playersTurn(3,board);
+    playersTurn(5,board);
+    playersTurn(8,board);
+    playersTurn(6,board);
+    playersTurn(4,board);
+    expect(playersTurn(7,board)).toBe('GAME ENDS WITH A DRAW!');
+  });
+  it.skip('should print the GAME ENDS WITH A DRAW! ending screen when in the following stance: (X,O,X,O,O,X,X,X,O)', () => {
+    const logSpy = jest.spyOn(global.console, 'log');
+    let board=drawBoard();
+    playersTurn(0,board);
+    playersTurn(1,board);
+    playersTurn(2,board);
+    playersTurn(3,board);
+    playersTurn(5,board);
+    playersTurn(8,board);
+    playersTurn(6,board);
+    playersTurn(4,board);
+    playersTurn(7,board);
+    expect(logSpy).toHaveBeenCalledWith('Player X:\nX|O|X\n-+-+-\nO|O|X\n-+-+-\nX|X|O\n\nGAME ENDS WITH A DRAW!');
+    logSpy.mockRestore();
+  });
+});

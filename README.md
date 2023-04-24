@@ -35,8 +35,8 @@ npm test -- --watchAll --collect-coverage --verbose
  ✅ Scenario #5 Given a Tic-Tac-Toe game simulator When board is in the following stance: (X, , ,O,X, ,O, ,X) Then the game should return PLAYER X WON!.
  ✅ Scenario #6 Given a Tic-Tac-Toe game simulator When board is in the following stance: (X, , ,O,X, ,O, ,X) Then the game should print the PLAYER X WON! winning screen.
 
-⚠ US #6 As a Tic-Tac-Toe game spectator I want to see the ended with draw screen so that I can verify that the game ended without a winner.
- ⚠ Scenario #1 Given a Tic-Tac-Toe game simulator When board is in the following stance: (X,O,X,O,O,X,X,X,O) Then the game should return GAME ENDS WITH A DRAW!.
+🚧 US #6 As a Tic-Tac-Toe game spectator I want to see the ended with draw screen so that I can verify that the game ended without a winner.
+ 🚧 Scenario #1 Given a Tic-Tac-Toe game simulator When board is in the following stance: (X,O,X,O,O,X,X,X,O) Then the game should return GAME ENDS WITH A DRAW!.
  ⚠ Scenario #2 Given a Tic-Tac-Toe game simulator When board is in the following stance: (X,O,X,O,O,X,X,X,O) Then the game should print the GAME ENDS WITH A DRAW! ending screen.
 
 ⚠ US #7 As a Tic-Tac-Toe game spectator I want to run the game in bot mode so that I can watch an automated match.
