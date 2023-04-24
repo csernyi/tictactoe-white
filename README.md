@@ -18,4 +18,23 @@ npm test -- --watchAll --collect-coverage --verbose
 ⚠ US #2 As a Tic-Tac-Toe game spectator I want player 'X' to move first so that I can verify that the game has started.
  ⚠ Scenario #1 Given a Tic-Tac-Toe game simulator When 'X' marks the 1st cell as it's first move Then the board should show the following stance: (X, , , , , , , , ).
  ⚠ Scenario #2 Given a Tic-Tac-Toe game simulator When 'X' marks the 2nd cell as it's first move Then the board should show the following stance: ( ,X, , , , , , , ).
- 
+
+⚠ US #3 As a Tic-Tac-Toe game spectator I want player 'O' to move second so that I can verify that the players move alternately.
+ ⚠ Scenario #1 Given a Tic-Tac-Toe game simulator When 'X' marks the 1st then 'O' marks the 2nd cell Then the board should show the following stance: (X,O, , , , , , , ).
+ ⚠ Scenario #2 Given a Tic-Tac-Toe game simulator When 'X' marks the 2nd then 'O' marks the 9th cell Then the board should show the following stance: ( ,X, , , , , , ,O).
+
+⚠ US #4 As a Tic-Tac-Toe game spectator I want an error checking feature so that it can prevent invalid entries.
+ ⚠ Scenario #1 Given a Tic-Tac-Toe game simulator When the space is not in range 0-8 Then the game should show THIS IS AN INVALID POSITION.
+ ⚠ Scenario #2 Given a Tic-Tac-Toe game simulator When the space is not empty Then the game should show THIS SPACE IS ALREADY TAKEN.
+
+⚠ US #5 As a Tic-Tac-Toe game spectator I want to see the winning screens so that I can verify that 'X' or 'O' won the game.
+ ⚠ Scenario #1 Given a Tic-Tac-Toe game simulator When board is in the following stance: (X, , ,X,O, ,X, ,O) Then the game should return PLAYER X WON!.
+ ⚠ Scenario #2 Given a Tic-Tac-Toe game simulator When board is in the following stance: (X, , ,X,O, ,X, ,O) Then the game should print the PLAYER X WON! winning screen.
+ ⚠ Scenario #3 Given a Tic-Tac-Toe game simulator When board is in the following stance: (X, ,X,O,O,O,X, , ) Then the game should return PLAYER O WON!.
+ ⚠ Scenario #4 Given a Tic-Tac-Toe game simulator When board is in the following stance: (X, ,X,O,O,O,X, , ) Then the game should print the PLAYER O WON! winning screen.
+ ⚠ Scenario #5 Given a Tic-Tac-Toe game simulator When board is in the following stance: (X, , ,O,X, ,O, ,X) Then the game should return PLAYER X WON!.
+ ⚠ Scenario #6 Given a Tic-Tac-Toe game simulator When board is in the following stance: (X, , ,O,X, ,O, ,X) Then the game should print the PLAYER X WON! winning screen.
+
+⚠ US #6 As a Tic-Tac-Toe game spectator I want to see the ended with draw screen so that I can verify that the game ended without a winner.
+ ⚠ Scenario #1 Given a Tic-Tac-Toe game simulator When board is in the following stance: (X,O,X,O,O,X,X,X,O) Then the game should return GAME ENDS WITH A DRAW!.
+ ⚠ Scenario #2 Given a Tic-Tac-Toe game simulator When board is in the following stance: (X,O,X,O,O,X,X,X,O) Then the game should print the GAME ENDS WITH A DRAW! ending screen.
